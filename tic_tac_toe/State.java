@@ -10,8 +10,8 @@ public class State
 	public State()
 	{
 		String [] emptyBoard = {" ", " ", " ",
-		 												" ", " ", " ",
-		 												" ", " ", " "};
+		 			" ", " ", " ",
+		 			" ", " ", " "};
 		this.board = emptyBoard;
 		this.movesLeft = 9;
 	}

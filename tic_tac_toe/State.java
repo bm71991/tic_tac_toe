@@ -39,10 +39,10 @@ public class State
 		boolean result = false;
 
 		if ((moveIndex <= 8) && (moveIndex >= 0) &&
-			(board[moveIndex] == " "))
-				
+			(board[moveIndex] == " "))	{
 			result = true;
-
+		}
+		
 		return result;
 	}
 

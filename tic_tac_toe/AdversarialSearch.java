@@ -40,7 +40,7 @@ public class AdversarialSearch
 		for (Integer currentMove : availableMoves)
 		{
 			State newState = new State(copyStringArray(boardState.getBoard()),
-																 boardState.getMovesLeft());
+			boardState.getMovesLeft());
 			
 			newState.putO(currentMove);
 			minUtilityValue = Math.min (minUtilityValue, maxValue(newState));
@@ -86,7 +86,7 @@ public class AdversarialSearch
 		for (Integer currentMove : availableMoves)
 		{
 			State newState = new State(copyStringArray(boardState.getBoard()),
-																 boardState.getMovesLeft());
+			boardState.getMovesLeft());
 			newState.putX(currentMove);
 
 			maxUtilityValue = Math.max (maxUtilityValue, minValue(newState));
@@ -118,7 +118,7 @@ public class AdversarialSearch
 		{
 			MoveState newMoveState = new MoveState(moveIndex);
 			State newState = new State(copyStringArray(boardState.getBoard()),
-																 boardState.getMovesLeft());
+			boardState.getMovesLeft());
 			newState.putX(moveIndex);
 
 			/***********************************************************************
